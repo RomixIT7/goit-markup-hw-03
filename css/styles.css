@@ -33,9 +33,8 @@ img {
 }
 
 .container {
-  max-width: 1440px;
-  padding-left: 156px;
-  padding-right: 156px;
+  width: 1158px;
+  padding: 0 15px 0 15px;
   margin: 0 auto;
 }
 
@@ -44,6 +43,7 @@ img {
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-container {
@@ -52,8 +52,8 @@ img {
 
 .nav {
   display: flex;
-  gap: 76px;
   flex-grow: 1;
+  align-items: center;
 }
 
 .nav-link {
@@ -64,6 +64,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .studio {
@@ -81,6 +82,7 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 
 .nav-list-link:hover,
@@ -118,11 +120,10 @@ address {
 
 .solutions {
   background: var(--NAVY-BLUE, #2e2f42);
+  padding: 188px 0;
 }
 
 .solutions-container {
-  padding-top: 188px;
-  padding-bottom: 188px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -155,6 +156,8 @@ address {
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border: none;
+  display: block;
+  min-width: 169px;
 }
 
 .solution-button:hover,
@@ -163,6 +166,19 @@ address {
 }
 
 /* ========== BENEFITS ========= */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .benefits {
   padding-top: 120px;
@@ -227,10 +243,6 @@ address {
   margin-bottom: 72px;
 }
 
-.team-list-image {
-  margin-bottom: 32px;
-}
-
 .team-list-member {
   color: var(--NAVY-BLUE, #2e2f42);
   text-align: center;
@@ -246,14 +258,17 @@ address {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 32px;
+}
+
+.team-list-member-container {
+  padding: 32px 0;
 }
 
 /* ========= PORTFOLIO ========= */
 
 .portfolio {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .portfolio-list {
@@ -295,8 +310,12 @@ address {
 
 .footer {
   background: var(--NAVY-BLUE, #2e2f42);
-  padding-top: 101.5px;
-  padding-bottom: 100px;
+  padding: 100px 0;
+}
+
+.footer-link {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-paragraph {
@@ -304,7 +323,6 @@ address {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-top: 17.5px;
   max-width: 264px;
 }
 
